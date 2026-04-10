@@ -30,6 +30,7 @@ const IMG_CELEBRITY_VS      = "https://d2xsxph8kpxj0f.cloudfront.net/31051966352
 const IMG_DHT_STAGES        = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529409853/3AEXRUJeuYifWExCNaLMLt/hf_20260408_132918_3477f5dc-225d-4f59-9064-3bc6009727b0_613c3740.png";
 const IMG_HOLLYWOOD_SET     = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529409853/3AEXRUJeuYifWExCNaLMLt/hf_20260408_133431_492a1f39-faa7-4f37-af60-b20fa99d2572_3430b986.png";
 const IMG_BEFORE_AFTER_12W  = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529409853/3AEXRUJeuYifWExCNaLMLt/hf_20260408_134147_08908866-2e97-4eab-95d5-e4fdb9bfe4bd_797b977d.png";
+const IMG_WOMAN_IN_CHAIR4   = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529409853/3AEXRUJeuYifWExCNaLMLt/adv-woman-in-chair4-exr7svjKMK2eR3yBSDe3sQ.webp";
 const IMG_TIMELINE_JOURNEY  = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529409853/3AEXRUJeuYifWExCNaLMLt/adv-timeline-journey-2oMSksd9EdCtD238Xc5efb.webp";
 const IMG_LETTER_WRITING    = "https://d2xsxph8kpxj0f.cloudfront.net/310519663529409853/3AEXRUJeuYifWExCNaLMLt/adv-letter-writing-8t2sNYrLPMzoDZQpvuce6Y.webp";
 
@@ -249,6 +250,9 @@ export default function Home() {
 
 
 
+        {/* ★ ABOVE THE FOLD VIDEO — directly under main headline+subheadline ★ */}
+        <VideoGif src={VID_ABOVE_FOLD} caption="The protocol applied to celebrity scalps every morning for 18 years. Now available to everyone." />
+
         {/* Author Byline */}
         <div style={{ display: "flex", alignItems: "center", gap: "1rem", padding: "1rem 0", borderTop: "1px solid #D8D4CA", borderBottom: "1px solid #D8D4CA", marginBottom: "2rem", flexWrap: "wrap" }}>
           {/* Author avatars — Renée (product+Holmes combo cropped) and Dr. Holmes solo */}
@@ -298,8 +302,8 @@ export default function Home() {
         {/* ─── SECTION: The Woman in Chair 4 ─── */}
         <h2 style={h2}>The Woman in Chair 4</h2>
 
-        {/* Above-the-fold video — moved here per user request */}
-        <VideoGif src={VID_ABOVE_FOLD} caption="The protocol applied to celebrity scalps every morning for 18 years. Now available to everyone." />
+        {/* Salon chair image — woman looking in mirror, reflective */}
+        <SectionImage src={IMG_WOMAN_IN_CHAIR4} alt="A woman in her mid-50s sitting in a salon chair, looking quietly into the mirror" caption='Teresa. Chair 4. The last appointment. Twelve years ago. I still think about her every day.' />
 
         <div style={body}>
           <p style={p}>Before Hollywood, I was nobody special.</p>
