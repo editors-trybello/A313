@@ -683,8 +683,7 @@ export default function Home() {
         {/* ─── SECTION: Proof ─── */}
         <h2 style={h2}>Proof That Atonement Works</h2>
 
-        {/* Results video — GIF style */}
-        <VideoGif src={VID_RESULTS} caption="Real results from real women. No filters. No extensions." />
+
 
         {/* Before/After grid — 4 customers */}
         <SectionImage src={IMG_BEFORE_AFTER_GRID} alt="4-panel before and after: Linda 54, Patricia 58, Margaret 61, Carol 62" caption="Linda (54), Patricia (58), Margaret (61), Carol (62). Real customers. Unretouched photos. Individual results may vary." />
@@ -761,7 +760,10 @@ export default function Home() {
         {/* ─── SECTION: Timeline ─── */}
         <h2 style={h2}>What I Wish I Could Have Given You Sooner</h2>
 
-        {/* 12-week journey journal image — placed directly under headline */}
+        {/* Results video — moved here per user request */}
+        <VideoGif src={VID_RESULTS} caption="Real results from real women. No filters. No extensions." />
+
+        {/* 12-week journey journal image */}
         <SectionImage src={IMG_TIMELINE_JOURNEY} alt="12-week hair growth journal with botanical ingredients and dropper bottle" caption="The 12-week protocol, documented. Week by week, follicle by follicle." />
 
         <div style={{ margin: "1.5rem 0" }}>
