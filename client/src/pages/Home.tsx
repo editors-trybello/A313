@@ -217,12 +217,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Sponsored Content Disclosure */}
-      <div style={{ background: "#FFF8E7", borderBottom: "1px solid #E8D98A", padding: "0.5rem 1.25rem", textAlign: "center" }}>
-        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.75rem", color: "#7A6A20", letterSpacing: "0.05em" }}>
-          SPONSORED CONTENT — This article contains affiliate links. WellnessReport may earn a commission.
-        </span>
-      </div>
+
 
       {/* Article Container */}
       <main style={{ maxWidth: "720px", margin: "0 auto", padding: "2.5rem 1.25rem 4rem" }}>
@@ -255,9 +250,22 @@ export default function Home() {
 
         {/* Author Byline */}
         <div style={{ display: "flex", alignItems: "center", gap: "1rem", padding: "1rem 0", borderTop: "1px solid #D8D4CA", borderBottom: "1px solid #D8D4CA", marginBottom: "2rem", flexWrap: "wrap" }}>
+          {/* Author avatars — Renée (product+Holmes combo cropped) and Dr. Holmes solo */}
           <div style={{ display: "flex", gap: "0.5rem" }}>
-            <div style={{ width: "42px", height: "42px", borderRadius: "50%", background: "#C8A882", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1rem", color: "white", flexShrink: 0 }}>RH</div>
-            <img src={IMG_DR_HOLMES_PRODUCT} alt="Dr. Yolanda Holmes" style={{ width: "42px", height: "42px", borderRadius: "50%", objectFit: "cover", flexShrink: 0 }} />
+            <div style={{ position: "relative", width: "44px", height: "44px", flexShrink: 0 }}>
+              <img
+                src={IMG_DR_HOLMES_PRODUCT}
+                alt="Renée Halsted"
+                style={{ width: "44px", height: "44px", borderRadius: "50%", objectFit: "cover", objectPosition: "right center", border: "2px solid white", display: "block" }}
+              />
+            </div>
+            <div style={{ position: "relative", width: "44px", height: "44px", flexShrink: 0, marginLeft: "-12px" }}>
+              <img
+                src={IMG_DR_HOLMES_LECTURE}
+                alt="Dr. Yolanda Holmes"
+                style={{ width: "44px", height: "44px", borderRadius: "50%", objectFit: "cover", objectPosition: "center top", border: "2px solid white", display: "block" }}
+              />
+            </div>
           </div>
           <div>
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 600, fontSize: "0.85rem", color: "#1C1C1E", margin: 0 }}>
