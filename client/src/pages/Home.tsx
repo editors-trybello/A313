@@ -247,8 +247,7 @@ export default function Home() {
           A celebrity stylist's public confession: the plant-based DHT protocol she was forbidden from sharing, the famous clients who begged her to stay quiet, and why she's putting everything on the line to give every woman over 40 access to what actually works.
         </p>
 
-        {/* ★ ABOVE THE FOLD VIDEO — placed directly under headline+subheadline ★ */}
-        <VideoGif src={VID_ABOVE_FOLD} caption="The protocol applied to celebrity scalps every morning for 18 years. Now available to everyone." />
+
 
         {/* Author Byline */}
         <div style={{ display: "flex", alignItems: "center", gap: "1rem", padding: "1rem 0", borderTop: "1px solid #D8D4CA", borderBottom: "1px solid #D8D4CA", marginBottom: "2rem", flexWrap: "wrap" }}>
@@ -298,6 +297,9 @@ export default function Home() {
 
         {/* ─── SECTION: The Woman in Chair 4 ─── */}
         <h2 style={h2}>The Woman in Chair 4</h2>
+
+        {/* Above-the-fold video — moved here per user request */}
+        <VideoGif src={VID_ABOVE_FOLD} caption="The protocol applied to celebrity scalps every morning for 18 years. Now available to everyone." />
 
         <div style={body}>
           <p style={p}>Before Hollywood, I was nobody special.</p>
