@@ -7,13 +7,7 @@
  *
  * ALL ASSETS: Real client assets uploaded to CDN — no AI placeholders
  */
-<script>
-var head = document.head;
-var script = document.createElement('script');
-script.type = 'text/javascript';
-script.src = "https://t.trybello.com/v1/lst/universal-script?ph=b69339553632ce0d5c69336243ca7d6e7d0adc6671a01a6678837cb5c239e6b7&tag=!clicked&ref_url=" + encodeURI(document.URL) ;
-head.appendChild(script);
-</script>
+
 import { useEffect, useRef, useState } from "react";
 
 // ─── CDN Asset URLs ───────────────────────────────────────────────────────────
